@@ -1,10 +1,10 @@
 A bit introduction:
-* System Design: local data on Android devices + Tensorflow on the cloud => Application: Gboard
-* Federated Averaging algorithm:
+* System Design https://arxiv.org/abs/1902.01046: local data on Android devices + Tensorflow on the cloud => Application: Gboard
+* Federated Averaging algorithm https://arxiv.org/abs/1602.05629:
   - motivated by bandwidth and latency limitations
   - can train deep networks using 10-100x less communication compared to a naively federated version of SGD
-* Compressing updates: use random rotations and quantization to reduce upload communication costs
-* Secure Aggregation protocol:  
+* Compressing updates https://arxiv.org/abs/1610.05492: use random rotations and quantization to reduce upload communication costs
+* Secure Aggregation protocol http://eprint.iacr.org/2017/281:  
   - decrypt the average update if 100s or 1000s of users have participated 
   - no individual phone's update can be inspected before averaging
 
